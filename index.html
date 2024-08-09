@@ -36,20 +36,8 @@
                         onClick={() => setOpen(!open)}>
                         <i className="fas fa-bars text-dark" style={{ fontSize: "28" }}></i>
                     </button>
-                    <div className={`${open ? "" : "collapse"} navbar-collapse`} id="navbarNav">
+                    <div className="navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
-                            <Link
-                                className="nav-item nav-secondary my-1 d-md-inline-block Toolbar-TutorialButton btn btn-sm btn-outline-light"
-                                target="_blank"
-                                to="/tasks">
-                                Tasks <i className="fa fa-check-circle" aria-hidden="true"></i>
-                            </Link>
-                            <Link
-                                className="nav-item nav-secondary my-1 d-md-inline-block Toolbar-TutorialButton btn btn-sm btn-outline-light"
-                                target="_blank"
-                                to="/faq">
-                                Faq <i className="fa fa-question-circle" aria-hidden="true"></i>
-                            </Link>
                             <a
                                 className="nav-item nav-secondary my-1 d-md-inline-block Toolbar-TutorialButton btn btn-sm btn-outline-light"
                                 href="https://arxiv.org/abs/2108.08103"
@@ -79,11 +67,6 @@
                                 </a>
                             </li>
                             <li className="nav-item separator d-md-inline-block"></li>
-                            {logout && (
-                                <div className="btn btn-danger" onClick={logout}>
-                                    Logout
-                                </div>
-                            )}
                         </ul>
                     </div>
                 </div>
