@@ -1,0 +1,368 @@
+/* Defaults */
+/* -------- */
+:root {
+    --primary: #39b3c6;
+    --secondary: #e68a3f; /* darkened version of #ff9f46 */
+    --light: #f0f2f5;
+    --dark: #3493a4; /* darkened version of --primary */
+}
+
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--secondary);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--secondary);
+}
+
+/* Custom styles */
+/* -------- */
+
+.BootstrapTable-hover > tbody > tr.BootstrapTable-hover-row:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.faq-header {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.faq-header:hover {
+    cursor: pointer;
+}
+
+.faq-icon {
+    color: var(--primary);
+}
+
+.faq-header:hover .faq-icon {
+    color: #ff8513;
+}
+
+.faq-home {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.faq-home:hover {
+    cursor: pointer;
+    color: #d6761c;
+}
+
+.Toolbar-TutorialButton {
+    background: white;
+    color: #545556;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.text-white-80 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.text-white-65 {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.text-black-30 {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.text-black-65 {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.code {
+    background-color: #f5f7fa; /* lightened version of --light */
+    border-left: 4px solid #dadde1; /* darkened version of --light */
+    padding: 1rem;
+}
+
+.activate-tooltip {
+    /* fix flickering of tooltip on mouseover */
+    cursor: default;
+}
+
+.activate-tooltip > * {
+    pointer-events: none;
+}
+
+.navbar.navbar-light img.bert {
+    margin-right: 10px;
+}
+
+.navbar.navbar-light .navbar-brand {
+    color: #000;
+}
+
+.navbar.navbar-light .nav-item {
+    margin-left: 15px;
+}
+
+.navbar.navbar-light .nav-item.nav-secondary {
+    margin-left: 0;
+}
+
+.navbar.navbar-light .nav-item.separator {
+    margin: 5px 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.container h1 {
+    color: var(--dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+}
+
+.container h2 {
+    color: var(--dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container h3 {
+    color: var(--dark);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#Header {
+    background-color: var(--primary);
+    padding: 2rem 0;
+}
+
+#Header h1 {
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+#Header h2 {
+    margin: 1rem 0 0 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#Header .breadcrumb-nav nav ol.breadcrumb li a {
+    color: #78d0de; /* lightened version of --primary */
+}
+
+#Header .breadcrumb-nav nav ol.breadcrumb li::before {
+    color: #5db8c7; /* lightened version of --primary */
+}
+
+.card .card-title .notice {
+    float: right;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #6c757d; /* gray-600 in Bootstrap */
+    margin-top: 0.2rem;
+}
+
+/* Sticky footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 270px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 270px;
+    padding-top: 2rem;
+    background-color: #f8f9fa; /* gray-100 in Bootstrap */
+    border-top: 1px solid #e9ecef; /* gray-200 in Bootstrap */
+}
+
+footer .logos .r1,
+footer .logos .r2 {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+footer .logos .r2 {
+    display: block;
+}
+
+footer .logos img.logo {
+    margin-right: 16px;
+}
+
+footer .logos img.logo.logo-ukp {
+    height: 36px;
+}
+
+footer .logos img.logo.logo-tud {
+    height: 66px;
+    margin: -13px 16px -13px 0;
+}
+
+footer .logos img.logo.logo-nyu {
+    height: 30px;
+}
+
+footer .logos img.logo.logo-cambridge {
+    height: 30px;
+}
+
+footer .logos img.logo.logo-deepmind {
+    height: 32px;
+    margin-top: -1px;
+}
+
+body {
+    margin-bottom: 177px;
+}
+
+footer {
+    height: 177px;
+}
+
+/* --- Index */
+#Header p.highlight-text {
+    color: #8fdae0; /* lightened version of --primary */
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+#Header p.highlight-text .highlight {
+    font-size: 2rem;
+    text-transform: none;
+    color: #b3e9ed; /* lightened version of --primary */
+}
+
+#Header #HeaderLogo {
+    margin-top: -15px;
+}
+
+#Header pre {
+    font-size: 0.8rem;
+    border-left: 4px solid #8fdae0; /* lightened version of --primary */
+    background-color: #43bdcc; /* lightened version of --primary */
+}
+
+#Header .form-group {
+    margin-bottom: 0;
+}
+
+#Header .badge-light {
+    font-size: 0.9rem;
+    background-color: #7ccdd4; /* lightened version of --primary */
+}
+
+#IndexButtonRow {
+    display: inline-block;
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#IndexButtonRow a {
+    width: 120px;
+}
+
+#IndexButtonRow a > div {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+#IndexButtonRow a {
+    border: none;
+    color: #fff;
+}
+
+#IndexButtonRow a:hover {
+    background-color: var(--dark);
+}
+
+/* Task/Languages/Adapters overview */
+#Header #AdapterTypeNav {}
+
+#Header #TypeToSearch {
+    margin-top: 7px;
+    background-color: #4ac1cf; /* lightened version of --primary */
+    border: 1px solid #64cad5; /* lightened version of --primary */
+    color: #fff;
+}
+
+#Header #TypeToSearch:focus {
+    border: 1px solid #bbe6ea; /* lightened version of --primary */
+}
+
+#Header #TypeToSearch::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+#Header #ModelTypeNav .dropdown {
+    display: inline-block;
+}
+
+#Header .adapter-nav .navigation p {
+    float: left;
+    font-weight: bold;
+    color: white;
+    margin: 0.5rem 1rem 0 0;
+}
+
+#Header .adapter-nav .dropdown a.dropdown-toggle,
+#Header .adapter-nav .dropdown a.active {
+    background: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: white;
+}
+
+#Header .adapter-nav .nav-item {
+    margin-right: 4px;
+}
+
+#Header .adapter-nav .nav-item a.nav-link.active {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: white;
+}
+
+#Header .adapter-nav .nav-item a:not(.active) {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+#Header .adapter-nav .nav-item a:not(.active):hover {
+    background-color: var(--dark);
+}
+
+#Header .adapter-nav .documentation {
+    color: #99e2e9; /* lightened version of --primary */
+}
+
+.task h3 i {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.task .subtasks a {
+    text-align: left;
+}
+
+#NoSearchResult .query {
+    opacity: 0.65;
+}
+
+#NoSearchResult
